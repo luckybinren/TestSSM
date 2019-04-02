@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-2.1.0.js"></script>
+	</head>
+	<body>
+	<form action="#" method="get">
+		姓名:<input type="text" id="name" name="userName"/><br />
+		密码:<input type="text" id="password" name="passWord" />		
+		<input  type="button" id="denglu" value="登录"/>
+	</form>
+	</body>
+	<script type="text/javascript">
+		$("#denglu").on("click",function(){
+			$.ajax({
+			type:"get",
+			url:"loginContriller",
+			async:true,
+			data:{
+			userName:$("#name").val(),
+			passWord:$("#password").val()
+			},
+			success:function(data){
+			
+			if(data=="true"){
+			alert("登录成功")
+			}else{
+			alert("登录失败")
+			}
+			}
+		})
+			})
+		
+		
+		
+		</script>
+</html>

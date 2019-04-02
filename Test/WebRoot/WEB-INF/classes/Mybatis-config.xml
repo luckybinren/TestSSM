@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//MyBatis.org//DTD Config 3.0//EN"
+"http://www.mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- <settings>
+<setting name="L" value=""/>
+</settings> -->
+<typeAliases>
+		<package name="com.test.entity"/>
+	</typeAliases>
+
+</configuration>
